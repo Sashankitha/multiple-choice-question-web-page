@@ -10,4 +10,4 @@
 <p>
   The output looks like the :-
 </p>
-<img src = "">
+<img src = "output.png">
