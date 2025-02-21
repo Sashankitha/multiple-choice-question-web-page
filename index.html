@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire with Answer Validation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionnaire</h1>
+        <form id="questionnaire-form">
+            <div class="question" id="question-1">
+                <label for="color">1. What is your favorite color?</label>
+                <input type="text" id="color" name="color" placeholder="Enter your favorite color">
+            </div>
+            
+            <div class="question" id="question-2">
+                <label for="fruits">2. Select your preferred fruits (Choose multiple):</label>
+                <input type="checkbox" id="apple" name="fruits" value="apple"><label for="apple">Apple</label>
+                <input type="checkbox" id="banana" name="fruits" value="banana"><label for="banana">Banana</label>
+                <input type="checkbox" id="orange" name="fruits" value="orange"><label for="orange">Orange</label>
+                <input type="checkbox" id="grapes" name="fruits" value="grapes"><label for="grapes">Grapes</label>
+            </div>
+
+            <div class="question" id="question-3">
+                <label for="ageGroup">3. How old are you?</label>
+                <select id="ageGroup" name="ageGroup">
+                    <option value="under 18">Under 18</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-50">36-50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </div>
+
+            <div class="question" id="question-4">
+                <label for="experience">4. Describe your experience with JavaScript:</label>
+                <input type="text" id="experience" name="experience" placeholder="Enter your experience">
+            </div>
+
+            <div class="question" id="question-5">
+                <label for="cities">5. Which of the following cities have you visited?</label>
+                <select id="cities" name="cities" multiple>
+                    <option value="New York">New York</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="London">London</option>
+                    <option value="Tokyo">Tokyo</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
